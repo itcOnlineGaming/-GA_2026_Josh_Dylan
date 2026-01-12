@@ -72,7 +72,7 @@ func set_random_teleport_cooldown():
 
 
 func log_ab_result_with_survival(survival_time: float):
-	var file_path = "-GA_2026_Josh_Dylan/JointProj/ABtest"
+	var file_path = "res://ab_test_results.csv"
 
 	var file: FileAccess
 
