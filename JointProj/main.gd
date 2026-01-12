@@ -16,6 +16,7 @@ func new_game():
 	get_tree().call_group(&"mobs", &"queue_free")
 	score = 0
 	$Player.start($StartPosition.position)
+	$Player.set_random_teleport_cooldown()
 	$StartTimer.start()
 	$HUD.update_score(score)
 	$HUD.show_message("Get Ready")

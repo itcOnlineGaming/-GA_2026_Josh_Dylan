@@ -8,6 +8,7 @@ func _ready():
 	
 	
 func _physics_process(delta: float) -> void:
+	playerPos = Globals.player_pos
 	var direction: Vector2 = playerPos - position
 	
 	if direction.length() == 0:
