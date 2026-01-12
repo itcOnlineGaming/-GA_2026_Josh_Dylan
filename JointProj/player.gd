@@ -2,7 +2,10 @@ extends Area2D
 
 signal hit
 
-@export var teleport_cooldown_time := 100 # seconds
+@export var teleport_cooldown_long := 120.0
+@export var teleport_cooldown_short := 40.0
+
+var teleport_cooldown := 0.0
 var teleport_timer := 0
 
 @export var speed = 400 # How fast the player will move (pixels/sec).
@@ -15,8 +18,6 @@ func _ready():
 func _input(event):
 	if event is InputEventMouseButton:
 		print("Mouse Click/Unclick at: ", event.position)
-	elif event is InputEventMouseMotion:
-		print("Mouse Motion at: ", event.position)
 
 func _process(delta):
 	if teleport_timer > 0:
@@ -31,12 +32,10 @@ func _process(delta):
 		velocity.y += 1
 	if Input.is_action_pressed(&"move_up"):
 		velocity.y -= 1
-	if Input.is_action_pressed(&"Teleport"):
-		if teleport_timer == 0:
-			position = get_global_mouse_position()
-			teleport_timer = teleport_cooldown_time
+	if Input.is_action_just_pressed(&"Teleport") and teleport_timer <= 0:
+		position = get_global_mouse_position()
+		teleport_timer = teleport_cooldown
 
-	print(teleport_timer)
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
@@ -55,6 +54,15 @@ func _process(delta):
 	elif velocity.y != 0:
 		$AnimatedSprite2D.animation = &"up"
 		rotation = PI if velocity.y > 0 else 0
+
+func set_random_teleport_cooldown():
+	if randi() % 2 == 0:
+		teleport_cooldown = teleport_cooldown_long
+		print("Teleport cooldown chosen: 120s")
+	else:
+		teleport_cooldown = teleport_cooldown_short
+		print("Teleport cooldown chosen: 40s")
+
 
 
 func start(pos):
