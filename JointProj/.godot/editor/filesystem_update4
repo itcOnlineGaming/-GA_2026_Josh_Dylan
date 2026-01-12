@@ -1,2 +1,4 @@
 res://main.tscn
-res://player.gd
+res://ab_test_results.condition.translation
+res://ab_test_results.cooldown.translation
+res://ab_test_results.survival.translation

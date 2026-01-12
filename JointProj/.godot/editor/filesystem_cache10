@@ -1,21 +1,21 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1768233130
-ab_test_results.csv::Translation::235585564229061439::1768233235::1768233246::1::::<><><>0<>0<>c7ee16449ddd47c000fd15340fb57dc5<>res://ab_test_results.condition.translation<*>res://ab_test_results.cooldown.translation<*>res://ab_test_results.survival.translation::
+::res://::1768235213
+ab_test_results.condition.translation::OptimizedTranslation::6822195105505053595::1768235197::0::1::::<><><>0<>0<><>::
+ab_test_results.cooldown.translation::OptimizedTranslation::2262650897265787953::1768235197::0::1::::<><><>0<>0<><>::
+ab_test_results.csv::Translation/Translation::235585564229061439::1768235364::1768235469::0::::<><><>0<>0<>6ff163d68f0cb138599593db0c439e9c<>::
+ab_test_results.survival.translation::OptimizedTranslation::919496537320535056::1768235197::0::1::::<><><>0<>0<><>::
 globals.gd::GDScript/GDScript::8557940783528498970::1768231048::0::1::::<>Node<><>0<>0<><>::
 hud.gd::GDScript/GDScript::194471105334324705::1768231048::0::1::::<>CanvasLayer<><>0<>0<><>::
 hud.tscn::PackedScene/PackedScene::4149710412387755562::1768231048::0::1::::<><><>0<>0<><>::uid://c1g57034r2c0::::res://hud.gd<>uid://bgv586r20ps8e::::res://fonts/Xolonium-Regular.ttf
 icon.webp::CompressedTexture2D/CompressedTexture2D::7531548479175478893::1768231048::1768231116::1::::<><><>0<>0<>be36da93ad24a1a3bc12378a461188f6<>res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex::
-main.gd::GDScript::6854943129266487135::1768232157::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::2820547996718400564::1768233109::0::1::::<><><>0<>0<><>::uid://c4wt6ace7hycd::::res://main.gd<>uid://cao351pllxqpa::::res://mob.tscn<>uid://bwhlkliwp13p4::::res://player.tscn<>uid://b0efehuavobda::::res://hud.tscn<>uid://sgfduhhw4pno::::res://art/House In a Forest Loop.ogg<>uid://td2mgko63p61::::res://art/gameover.wav
+main.gd::GDScript/GDScript::6854943129266487135::1768232157::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::2820547996718400564::1768235213::0::1::::<><><>0<>0<><>::uid://c4wt6ace7hycd::::res://main.gd<>uid://cao351pllxqpa::::res://mob.tscn<>uid://bwhlkliwp13p4::::res://player.tscn<>uid://b0efehuavobda::::res://hud.tscn<>uid://sgfduhhw4pno::::res://art/House In a Forest Loop.ogg<>uid://td2mgko63p61::::res://art/gameover.wav
 mob.gd::GDScript/GDScript::6489762662277065615::1768231048::0::1::::<>RigidBody2D<><>0<>0<><>::
-mob.tscn::PackedScene::4803497694852229190::1768231155::0::1::::<><><>0<>0<><>::uid://cypxpb8arjrqt::::res://mob.gd<>uid://dun74wipekpfq::::res://art/enemyFlyingAlt_1.png<>uid://vusf51hepduk::::res://art/enemyFlyingAlt_2.png<>uid://dgwhuvn7qb4iy::::res://art/enemyWalking_1.png<>uid://dyw702efe6meu::::res://art/enemyWalking_2.png<>uid://d182mv7y80xqy::::res://art/enemySwimming_1.png<>uid://dmgglhdyowipd::::res://art/enemySwimming_2.png
+mob.tscn::PackedScene/PackedScene::4803497694852229190::1768231155::0::1::::<><><>0<>0<><>::uid://cypxpb8arjrqt::::res://mob.gd<>uid://dun74wipekpfq::::res://art/enemyFlyingAlt_1.png<>uid://vusf51hepduk::::res://art/enemyFlyingAlt_2.png<>uid://dgwhuvn7qb4iy::::res://art/enemyWalking_1.png<>uid://dyw702efe6meu::::res://art/enemyWalking_2.png<>uid://d182mv7y80xqy::::res://art/enemySwimming_1.png<>uid://dmgglhdyowipd::::res://art/enemySwimming_2.png
 player.gd::GDScript::2214551732908234285::1768233084::0::1::::<>Area2D<><>0<>0<><>::
 player.tscn::PackedScene/PackedScene::3945712224003678091::1768231048::0::1::::<><><>0<>0<><>::uid://6s0lxctks3qn::::res://player.gd<>uid://b2aofu01vxvea::::res://art/playerGrey_walk1.png<>uid://ddjou2q6gxlfr::::res://art/playerGrey_walk2.png<>uid://bcow5c46vixno::::res://art/playerGrey_up1.png<>uid://dw3lwgwhpbfx8::::res://art/playerGrey_up2.png
 README.md::TextFile/TextFile::-1::1768231048::0::1::::<><><>0<>0<><>::
-Readme.txt::TextFile::-1::1768232619::0::1::::<><><>0<>0<><>::
-ab_test_results.condition.translation::OptimizedTranslation::6822195105505053595::1768233246::0::1::::<><><>0<>0<><>::
-ab_test_results.cooldown.translation::OptimizedTranslation::2262650897265787953::1768233246::0::1::::<><><>0<>0<><>::
-ab_test_results.survival.translation::OptimizedTranslation::919496537320535056::1768233246::0::1::::<><><>0<>0<><>::
+Readme.txt::TextFile/TextFile::-1::1768232619::0::1::::<><><>0<>0<><>::
 ::res://art/::1768231116
 enemyFlyingAlt_1.png::CompressedTexture2D/CompressedTexture2D::8591871734993922534::1768231048::1768231116::1::::<><><>0<>0<>ab32f33894724e8074ef1ee5e1b847e6<>res://.godot/imported/enemyFlyingAlt_1.png-559f599b16c69b112c1b53f6332e9489.ctex::
 enemyFlyingAlt_2.png::CompressedTexture2D/CompressedTexture2D::1516356722508602582::1768231048::1768231116::1::::<><><>0<>0<>2873601fdc4c3126168d61443a68ec14<>res://.godot/imported/enemyFlyingAlt_2.png-31dc7310eda6e1b721224f3cd932c076.ctex::
