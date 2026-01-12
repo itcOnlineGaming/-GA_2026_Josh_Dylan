@@ -11,6 +11,7 @@ func _ready():
 
 
 func _process(delta):
+	Globals.player_pos = global_position
 	var velocity = Vector2.ZERO # The player's movement vector.
 	if Input.is_action_pressed(&"move_right"):
 		velocity.x += 1
@@ -38,6 +39,7 @@ func _process(delta):
 	elif velocity.y != 0:
 		$AnimatedSprite2D.animation = &"up"
 		rotation = PI if velocity.y > 0 else 0
+		
 
 
 func start(pos):
