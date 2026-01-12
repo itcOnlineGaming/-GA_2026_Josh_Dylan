@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1768223079
+::res://::1768223480
 hud.gd::GDScript/GDScript::194471105334324705::1768221298::0::1::::<>CanvasLayer<><>0<>0<><>::
 hud.tscn::PackedScene/PackedScene::4149710412387755562::1768221298::0::1::::<><><>0<>0<><>::uid://c1g57034r2c0::::res://hud.gd<>uid://bgv586r20ps8e::::res://fonts/Xolonium-Regular.ttf
 icon.webp::CompressedTexture2D/CompressedTexture2D::7531548479175478893::1768221298::1768222715::1::::<><><>0<>0<>be36da93ad24a1a3bc12378a461188f6<>res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex::
 main.gd::GDScript/GDScript::6854943129266487135::1768221298::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::2820547996718400564::1768222726::0::1::::<><><>0<>0<><>::uid://c4wt6ace7hycd::::res://main.gd<>uid://cao351pllxqpa::::res://mob.tscn<>uid://bwhlkliwp13p4::::res://player.tscn<>uid://b0efehuavobda::::res://hud.tscn<>uid://sgfduhhw4pno::::res://art/House In a Forest Loop.ogg<>uid://td2mgko63p61::::res://art/gameover.wav
+main.tscn::PackedScene/PackedScene::2820547996718400564::1768222726::0::1::::<><><>0<>0<><>::uid://c4wt6ace7hycd::::res://main.gd<>uid://cao351pllxqpa::::res://mob.tscn<>uid://bwhlkliwp13p4::::res://player.tscn<>uid://b0efehuavobda::::res://hud.tscn<>uid://sgfduhhw4pno::::res://art/House In a Forest Loop.ogg<>uid://td2mgko63p61::::res://art/gameover.wav
 mob.gd::GDScript/GDScript::6489762662277065615::1768221298::0::1::::<>RigidBody2D<><>0<>0<><>::
 mob.tscn::PackedScene/PackedScene::4803497694852229190::1768221298::0::1::::<><><>0<>0<><>::uid://cypxpb8arjrqt::::res://mob.gd<>uid://dun74wipekpfq::::res://art/enemyFlyingAlt_1.png<>uid://vusf51hepduk::::res://art/enemyFlyingAlt_2.png<>uid://dgwhuvn7qb4iy::::res://art/enemyWalking_1.png<>uid://dyw702efe6meu::::res://art/enemyWalking_2.png<>uid://d182mv7y80xqy::::res://art/enemySwimming_1.png<>uid://dmgglhdyowipd::::res://art/enemySwimming_2.png
 player.gd::GDScript/GDScript::2214551732908234285::1768221298::0::1::::<>Area2D<><>0<>0<><>::
