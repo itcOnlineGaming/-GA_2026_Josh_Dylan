@@ -3,6 +3,13 @@ extends Node
 @export var mob_scene: PackedScene
 var score
 var playerPos = Globals.player_pos
+var survival_time := 0.0
+
+
+func _process(delta):
+	if $ScoreTimer.is_stopped() == false:
+		survival_time += delta
+
 
 func game_over():
 	$ScoreTimer.stop()
@@ -10,18 +17,19 @@ func game_over():
 	$HUD.show_game_over()
 	$Music.stop()
 	$DeathSound.play()
+	$Player.log_ab_result_with_survival(survival_time)
 
 
 func new_game():
 	get_tree().call_group(&"mobs", &"queue_free")
 	score = 0
+	survival_time = 0.0
 	$Player.start($StartPosition.position)
 	$Player.set_random_teleport_cooldown()
 	$StartTimer.start()
 	$HUD.update_score(score)
 	$HUD.show_message("Get Ready")
 	$Music.play()
-
 
 func _on_MobTimer_timeout():
 	# Create a new instance of the Mob scene.

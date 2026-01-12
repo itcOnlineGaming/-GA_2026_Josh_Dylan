@@ -2,11 +2,12 @@ extends Area2D
 
 signal hit
 
-@export var teleport_cooldown_long := 120.0
-@export var teleport_cooldown_short := 40.0
+@export var teleport_cooldown_long := 120.0# A
+@export var teleport_cooldown_short := 40.0# B
 
 var teleport_cooldown := 0.0
 var teleport_timer := 0
+var ab_condition := ""  # "A" or "B"
 
 @export var speed = 400 # How fast the player will move (pixels/sec).
 var screen_size # Size of the game window.
@@ -62,11 +63,39 @@ func _process(delta):
 func set_random_teleport_cooldown():
 	if randi() % 2 == 0:
 		teleport_cooldown = teleport_cooldown_long
-		print("Teleport cooldown chosen: 120s")
+		ab_condition = "A"
+		print("A/B Test: Condition A (120s)")
 	else:
 		teleport_cooldown = teleport_cooldown_short
-		print("Teleport cooldown chosen: 40s")
+		ab_condition = "B"
+		print("A/B Test: Condition B (40s)")
 
+
+func log_ab_result_with_survival(survival_time: float):
+	var file_path = "-GA_2026_Josh_Dylan/JointProj/ABtest"
+
+	var file: FileAccess
+
+	# If file does not exist, create it
+	if not FileAccess.file_exists(file_path):
+		file = FileAccess.open(file_path, FileAccess.WRITE)
+		file.store_line("timestamp,condition,cooldown,survival_time")
+	else:
+		file = FileAccess.open(file_path, FileAccess.READ_WRITE)
+		file.seek_end()
+
+	var timestamp = Time.get_datetime_string_from_system()
+	var line = "%s,%s,%s,%.2f" % [
+		timestamp,
+		ab_condition,
+		str(teleport_cooldown),
+		survival_time
+	]
+
+	file.store_line(line)
+	file.close()
+
+	print("A/B result saved:", line)
 
 
 func start(pos):
