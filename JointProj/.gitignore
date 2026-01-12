@@ -1,2 +1,7 @@
 .import
 logs/
+
+# Godot editor files
+.godot/
+.import/
+*.import
